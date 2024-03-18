@@ -294,23 +294,9 @@ export default function Page() {
       </div>
       <div className="my-8 flex flex-row space-x-2 w-full h-14 overflow-x-auto">
         <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
-          <a href="https://linear.app">
-            <svg width="78" height="20" role="img" aria-label="Linear logo">
-              <use href="/sprite.svg#linear" />
-            </svg>
-          </a>
-        </div>
-        <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
           <a href="https://supabase.com">
             <svg width="100" height="19" role="img" aria-label="Supabase logo">
               <use href="/sprite.svg#supabase" />
-            </svg>
-          </a>
-        </div>
-        <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
-          <a href="https://www.makeswift.com/blog/makeswift-is-joining-bigcommerce">
-            <svg width="96" height="19" role="img" aria-label="Makeswift logo">
-              <use href="/sprite.svg#makeswift" />
             </svg>
           </a>
         </div>
