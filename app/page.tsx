@@ -2,14 +2,14 @@ import { Suspense } from 'react';
 import { unstable_noStore as noStore } from 'next/cache';
 import Link from 'next/link';
 import Image from 'next/image';
-import smashing from 'public/images/home/smashing.jpg';
-import summit from 'public/images/home/summit.jpg';
-import reactathon from 'public/images/home/reactathon.jpg';
-import ship from 'public/images/home/ship.jpg';
-import filming from 'public/images/home/filming.jpg';
-import meetups from 'public/images/home/meetups.jpg';
-import vercel from 'public/images/home/vercel.jpg';
-import avatar from 'app/avatar.jpg';
+// import smashing from 'public/images/home/smashing.jpg';
+// import summit from 'public/images/home/summit.jpg';
+// import reactathon from 'public/images/home/reactathon.jpg';
+// import ship from 'public/images/home/ship.jpg';
+// import filming from 'public/images/home/filming.jpg';
+// import meetups from 'public/images/home/meetups.jpg';
+// import vercel from 'public/images/home/vercel.jpg';
+// import avatar from 'app/avatar.jpg';
 import ViewCounter from 'app/blog/view-counter';
 import { PreloadResources } from 'app/preload';
 import {
@@ -126,6 +126,29 @@ function BlogLink({ slug, name }) {
   );
 }
 
+function ProjectLink({ name, description, link }) {
+  return (
+    <div className="group">
+      <a
+        href={link}
+        className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4 w-full"
+      >
+        <div className="flex flex-col">
+          <p className="font-medium text-neutral-900 dark:text-neutral-100">
+            {name}
+          </p>
+          <p className="h-6 text-neutral-600 dark:text-neutral-400">
+            {description}
+          </p>
+        </div>
+        <div className="text-neutral-700 dark:text-neutral-300 transform transition-transform duration-300 group-hover:-rotate-12">
+          <ArrowIcon />
+        </div>
+      </a>
+    </div>
+  );
+}
+
 async function Views({ slug }: { slug: string }) {
   let views = await getViewsCount();
   return <ViewCounter allViews={views} slug={slug} />;
@@ -136,53 +159,15 @@ export default function Page() {
     <section>
       <PreloadResources />
       <h1 className="font-medium text-2xl mb-8 tracking-tighter">
-        hey, I'm leerob 👋
+        hey, I'm Austyn 👋
       </h1>
       <p className="prose prose-neutral dark:prose-invert">
         {`I'm a frontend developer, optimist, and community builder. I currently `}
         <Link href="/work">work</Link>
-        {` as the VP of Product at `}
-        <span className="not-prose">
-          <Badge href="https://vercel.com/home">
-            <svg
-              width="13"
-              height="11"
-              role="img"
-              aria-label="Vercel logo"
-              className="inline-flex mr-1"
-            >
-              <use href="/sprite.svg#vercel" />
-            </svg>
-            Vercel
-          </Badge>
-        </span>
-        {`, where I help teach the `}
-        <Badge href="https://nextjs.org">
-          <img
-            alt="Next.js logomark"
-            src="/next-logo.svg"
-            className="!mr-1"
-            width="14"
-            height="14"
-          />
-          Next.js
-        </Badge>
-        {` community, an open-source web framework built with `}
-        <Badge href="https://react.dev">
-          <svg
-            width="14"
-            height="14"
-            role="img"
-            aria-label="React logo"
-            className="!mr-1"
-          >
-            <use href="/sprite.svg#react" />
-          </svg>
-          React
-        </Badge>
-        .
+        {` as a self employed Software Engineer.`}
       </p>
-      <div className="columns-2 sm:columns-3 gap-4 my-8">
+
+      {/* <div className="columns-2 sm:columns-3 gap-4 my-8">
         <div className="relative h-40 mb-4">
           <Image
             alt="Me speaking on stage at React Summit about the future of Next.js"
@@ -243,16 +228,19 @@ export default function Page() {
             className="rounded-lg object-cover"
           />
         </div>
-      </div>
+      </div> */}
+
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          I create educational content for developers, teaching them about web
-          development, JavaScript and TypeScript, React and Next.js, and more.
-          This comes in all forms: blog posts, videos, tweets, conference talks,
-          and workshops. You can watch some of my favorites below.
+          I contribute to open-source projects such as Phaser.js, Fastifyjs,
+          Coding Train, and Kode.
+          Skilled in JavaScript, TypeScript, Next.js, Haxe, and p5.js.
+          Committed to continuous learning and making meaningful contributions
+          in the tech industry.
         </p>
       </div>
-      <div className="my-8 flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 w-full">
+  
+      {/* <div className="my-8 flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 w-full">
         <ChannelLink
           img={avatar}
           name="@leerob"
@@ -263,27 +251,45 @@ export default function Page() {
           name="@vercel"
           link="https://www.youtube.com/@vercelhq"
         />
-      </div>
+      </div> */}
+
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          Over the past decade, I've written content on my blog and newsletter.
-          I try to keep things simple. You'll find writing about technologies
+          Here you'll find a few links to my projects.
+        </p>
+      </div>
+
+      <div className="my-8 flex flex-col space-y-4 w-full">
+        <ProjectLink
+          name="GianaKouros Gourmet"
+          description="Explore recipes. Built with next.js sanity and tailwindcss"
+          link=""
+        />
+        <ProjectLink
+          name="BardsBallad"
+          description="Tabletop character manager. Built with next.js, react-ridge-state, tailwindcss"
+          link=""
+        />
+      </div>
+
+      <div className="prose prose-neutral dark:prose-invert">
+        <p>
+          and here you'll find writing about technologies
           I'm interested in at the time, or how I'm learning and growing in my
           career, sharing knowledge along the way.
         </p>
       </div>
+
       <div className="my-8 flex flex-col space-y-4 w-full">
         <BlogLink
           name="What Makes A Great Developer Experience?"
           slug="developer-experience-examples"
         />
         <BlogLink name="What is Developer Relations?" slug="devrel-at-vercel" />
-        <BlogLink name="The Story of Heroku" slug="heroku" />
       </div>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          I invest small angel checks into early stage startups building tools
-          for developers.
+          Tech I'm excited about.
         </p>
       </div>
       <div className="my-8 flex flex-row space-x-2 w-full h-14 overflow-x-auto">
@@ -325,9 +331,8 @@ export default function Page() {
       </div>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          I've worked with and advised companies on developer marketing,{' '}
-          <Link href="/blog/devrel-at-vercel">developer relations</Link>,
-          building open-source communities, product-led growth, and more.
+          I've worked with companies on building open-source
+          communities, product-led growth, and more.
         </p>
       </div>
       <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-600 dark:text-neutral-300">
@@ -336,7 +341,7 @@ export default function Page() {
             className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://twitter.com/leeerob"
+            href="https://twitter.com/kingcosm1c"
           >
             <ArrowIcon />
             <p className="h-7 ml-2">follow me</p>
@@ -347,7 +352,7 @@ export default function Page() {
             className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://leerob.substack.com"
+            href="https://austynstuddard.substack.com"
           >
             <ArrowIcon />
             <p className="h-7 ml-2">get email updates</p>

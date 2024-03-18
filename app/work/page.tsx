@@ -25,91 +25,91 @@ export default function WorkPage() {
           summary of my work so far.
         </p>
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
-        <h2 className="font-medium text-xl mb-1 tracking-tighter">Vercel</h2>
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">Sin Tiempo</h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-          VP of Product
+          Senior Software Engineer
         </p>
         <p>
-          I joined <a href="https://vercel.com/home">Vercel</a> early to grow{' '}
-          <a href="https://nextjs.org">Next.js</a> and our developer community.
-          I built our Developer Relations team to teach our community about our
-          products.
+          I joined <a href="https://www.linkedin.com/company/sin-tiempo-llc/">Sin Tiempo</a> early to grow{' '}
+          our portfolio and client list.
         </p>
         <ul>
           <li>
-            In 2021, I was promoted to Director of DevRel. We{' '}
-            <a href="https://twitter.com/kelseyhightower/status/1105985400110112768">
-              translated customer pain
-            </a>{' '}
-            back into the product roadmap. We spoke at{' '}
-            <Link href="/blog/nextjs-conf-2022-recap">conferences</Link>, wrote
-            blog posts, and created videos. We built open-source examples and
-            contributed back to the product.
+            Since joining the company, I've played a pivotal role in developing core
+            gameplay systems, resulting in smoother player
+            interactions and heightened engagement.
           </li>
           <li>
-            In 2022, I was promoted to VP of Developer Experience, now also
-            leading our product documentation team. My team created a{' '}
-            <a href="https://nextjs.org/learn">new free course</a> to teach
-            Next.js, which had 17 million page views that year.{' '}
-            <a href="https://twitter.com/leeerob/status/1608900031859527682">
-              I shipped.
-            </a>{' '}
-            I partnered with our open-source community, collaborating with
-            frameworks like{' '}
-            <a href="https://vercel.com/docs/frameworks/nuxt">Nuxt</a> and{' '}
-            <a href="https://astro.build/blog/vercel-official-hosting-partner/">
-              Astro
-            </a>{' '}
-            and sponsoring individuals and projects.
+            I've implemented efficient algorithms for collision detection,
+            pathfinding, and other essential
+            game functionalities to ensure smooth gameplay.
           </li>
           <li>
-            In 2023, I was promoted to VP of Product, now also leading Product
-            Management.
+            I'm always engaging in continuous learning and professional
+            development to stay updated with industry trends
+            and best practices relevant to Game Development.
           </li>
         </ul>
         <p>
-          Since I joined Vercel in 2020, Next.js active developers have grown
-          1000%, now at ~900k. Next.js is now a top 10 software project on
-          GitHub with <Stars />. It's used by Walmart, ChatGPT, Starbucks, Okta,
-          Datastax, Notion, and <a href="https://nextjs.org/showcase">more</a>.
+          Since I joined Sin Tiempo in 2023, I have continuously pursued learning
+          opportunities to enhance my skills. I actively engage with new challenges,
+          seeking feedback from my peers to refine my abilities and contribute
+          effectively to our projects.
         </p>
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
-        <h2 className="font-medium text-xl mb-1 tracking-tighter">Hy-Vee</h2>
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">Limitless Labs</h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-          Senior Software Engineer, 2018 — 2020
+          Senior Software Engineer, 2021 — 2023
         </p>
         <p>
-          Hy-Vee, an almost 100-year-old grocery chain in the United States,
-          wanted to build a new version of their digital storefront. I joined a
-          team of <Link href="/blog/product-engineers">product engineers</Link>{' '}
-          working across web and mobile to rebuild their legacy .NET application
-          (~500k MAU) with React and React Native.
+          Limitless Labs, a new startup wanted to build a place
+          for people to be onboarded into web3. I joined a team of
+          product engineers working across web, and web3 to build out
+          their application (~20k MAU) with React, Express.js, WebRTC,
+          Websockets and Phaser.js
         </p>
         <p>
-          On the frontend, I led our move from a custom webpack and React
-          configuration to Next.js and the latest React patterns. In the
-          process, I shared my learnings online, helping educate members of the
-          React and Next.js community by creating courses.
+          I spearheaded our team's efforts on the frontend by
+          implementing Phaser.js best practices and facilitating the
+          familiarization of our fellow engineers with the framework
+          and optimal system designs for performance and code organization.
+          Additionally, I actively contributed to the enhancement of Phaser.js
+          by resolving bugs encountered during our project.
         </p>
         <p>
-          Throughout my two years, I was able to work on some hard problems:
-          decoupling a decade old monolith into microservices, working with a
-          federated GraphQL API, learning and occasionally managing a Kubernetes
-          cluster, building and implementing a design system, incrementally
-          migrating individual components and routes to a new framework and
-          infrastructure, and more.
+         Over the span of my tenure, I tackled several challenging endeavors.
+         These included developing an Area of Interest (AOI) implementation
+         focused on enhancing performance and scalability,
+         all the while seamlessly integrating quests and web3 interactions.
         </p>
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
-        <h2 className="font-medium text-xl mb-1 tracking-tighter">Workiva</h2>
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">Endless Clouds</h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-          Software Engineer, 2015 — 2018
+          Software Engineer, 2021 — 2021
         </p>
         <p>
-          Workiva ($WK) is a cloud platform for data reporting and compliance.
-          During my time at Workiva, I gained my first production experience
-          using React. I worked on tooling to help predict and alert and
-          regressions in our SaaS platform, building a product similar to
-          open-source tools like Sentry.
+          Endless Clouds, a new startup wanted to build a play to earn game
+          in web3. I joined early, at the time there was only 2 devs, we worked across front
+          and backend to build out the functionality of the application
+          (~12k MAU) with Phaser.js, Socket.io, and the OpenSea api.
+        </p>
+        <p>
+          I took the lead in developing both the frontend and backend, guiding our team
+          through the implementation of Phaser.js best practices.
+          I also ensured that our fellow engineers were well-versed in
+          the framework and adept in designing systems for optimal
+          performance and code organization.
+        </p>
+        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">AppSolution</h2>
+        <p className="text-neutral-600 dark:text-neutral-400 text-sm">
+          Software Engineer, 2017 — 2018
+        </p>
+        <p>
+          AppSolution specializes in developing and hosting customer-centric
+          frontend applications designed to seamlessly facilitate online ordering,
+          streamline reservations, and optimize rewards programs for
+          enhanced user engagement
         </p>
       </div>
     </section>
