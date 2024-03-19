@@ -69,7 +69,7 @@ function ProjectLink({ name, description, link }) {
           <p className="font-medium text-neutral-900 dark:text-neutral-100">
             {name}
           </p>
-          <p className="text-lg text-neutral-600 dark:text-neutral-400">
+          <p className="text-base text-neutral-600 dark:text-neutral-400">
             {description}
           </p>
         </div>
